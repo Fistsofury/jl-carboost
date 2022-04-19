@@ -566,7 +566,7 @@ QBCore.Functions.CreateCallback('jl-carboost:server:spawnCar', function (source,
       Wait(25)
    end
    if DoesEntityExist(car) then
-      SetVehicleDoorsLocked(car, 2) -- Lock the vehicle
+      SetVehicleDoorsLocked(car, 1) -- Lock the vehicle
       SetVehicleNumberPlateText(car, cardata.data.plate)
       SetVehicleColours(car, math.random(159))
       local netId = NetworkGetNetworkIdFromEntity(car)
